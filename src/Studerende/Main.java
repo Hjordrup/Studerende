@@ -21,16 +21,19 @@ public class Main {
         st3.by = "Næstved";
 
 
-        Studerende st4 = new Studerende();
-        st4.navn = "Mathias";
-        st4.alder = 24;
+        Studerende st4 = new Studerende("Mathias",21);
         st4.by = "Næstved";
 
 
-        Studerende st5 = new Studerende();
-        st5.navn = "Mikkel";
-        st5.alder = 24;
-        st5.by = "Haslev";
+        Studerende st5 = new Studerende("Mikkel", 23, "Haslev");
+
+
+
+
+
+
+
+
         System.out.println("Indtast et navn med storst første bokstav");
         String nameIn = sc.nextLine();
         switch (nameIn) {

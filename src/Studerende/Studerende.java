@@ -9,19 +9,28 @@ Til sidst skal I lave en switch sætning, som indlæser et navn, og som kan vise
 
 
 public class Studerende {
-String navn;
-int alder;
-String retning;
-String by;
+    String navn;
+    int alder;
+    String retning;
+    String by;
 
-Studerende(){
-    retning = "Datamatiker";
+    Studerende() {
+        retning = "Datamatiker";
 
+    }
+
+    Studerende(String navn, int alder, String by) {
+        this.navn = navn;
+        this.alder = alder;
+        this.by = by;
+    }
+
+    Studerende(String navn, int alder) {
+        this.navn = navn;
+        this.alder = alder;
+    }
 
 
 }
-}
-
-
 
 
